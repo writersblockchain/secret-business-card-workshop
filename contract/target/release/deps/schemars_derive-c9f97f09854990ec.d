@@ -1,0 +1,12 @@
+/contract/target/release/deps/libschemars_derive-c9f97f09854990ec.so: /usr/local/cargo/registry/src/github.com-1ecc6299db9ec823/schemars_derive-0.7.6/src/lib.rs /usr/local/cargo/registry/src/github.com-1ecc6299db9ec823/schemars_derive-0.7.6/src/ast/mod.rs /usr/local/cargo/registry/src/github.com-1ecc6299db9ec823/schemars_derive-0.7.6/src/ast/from_serde.rs /usr/local/cargo/registry/src/github.com-1ecc6299db9ec823/schemars_derive-0.7.6/src/attr/mod.rs /usr/local/cargo/registry/src/github.com-1ecc6299db9ec823/schemars_derive-0.7.6/src/attr/doc.rs /usr/local/cargo/registry/src/github.com-1ecc6299db9ec823/schemars_derive-0.7.6/src/attr/schemars_to_serde.rs /usr/local/cargo/registry/src/github.com-1ecc6299db9ec823/schemars_derive-0.7.6/src/metadata.rs /usr/local/cargo/registry/src/github.com-1ecc6299db9ec823/schemars_derive-0.7.6/src/schema_exprs.rs
+
+/contract/target/release/deps/schemars_derive-c9f97f09854990ec.d: /usr/local/cargo/registry/src/github.com-1ecc6299db9ec823/schemars_derive-0.7.6/src/lib.rs /usr/local/cargo/registry/src/github.com-1ecc6299db9ec823/schemars_derive-0.7.6/src/ast/mod.rs /usr/local/cargo/registry/src/github.com-1ecc6299db9ec823/schemars_derive-0.7.6/src/ast/from_serde.rs /usr/local/cargo/registry/src/github.com-1ecc6299db9ec823/schemars_derive-0.7.6/src/attr/mod.rs /usr/local/cargo/registry/src/github.com-1ecc6299db9ec823/schemars_derive-0.7.6/src/attr/doc.rs /usr/local/cargo/registry/src/github.com-1ecc6299db9ec823/schemars_derive-0.7.6/src/attr/schemars_to_serde.rs /usr/local/cargo/registry/src/github.com-1ecc6299db9ec823/schemars_derive-0.7.6/src/metadata.rs /usr/local/cargo/registry/src/github.com-1ecc6299db9ec823/schemars_derive-0.7.6/src/schema_exprs.rs
+
+/usr/local/cargo/registry/src/github.com-1ecc6299db9ec823/schemars_derive-0.7.6/src/lib.rs:
+/usr/local/cargo/registry/src/github.com-1ecc6299db9ec823/schemars_derive-0.7.6/src/ast/mod.rs:
+/usr/local/cargo/registry/src/github.com-1ecc6299db9ec823/schemars_derive-0.7.6/src/ast/from_serde.rs:
+/usr/local/cargo/registry/src/github.com-1ecc6299db9ec823/schemars_derive-0.7.6/src/attr/mod.rs:
+/usr/local/cargo/registry/src/github.com-1ecc6299db9ec823/schemars_derive-0.7.6/src/attr/doc.rs:
+/usr/local/cargo/registry/src/github.com-1ecc6299db9ec823/schemars_derive-0.7.6/src/attr/schemars_to_serde.rs:
+/usr/local/cargo/registry/src/github.com-1ecc6299db9ec823/schemars_derive-0.7.6/src/metadata.rs:
+/usr/local/cargo/registry/src/github.com-1ecc6299db9ec823/schemars_derive-0.7.6/src/schema_exprs.rs:

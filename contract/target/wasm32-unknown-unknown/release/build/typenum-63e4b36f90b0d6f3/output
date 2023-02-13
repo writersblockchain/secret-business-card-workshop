@@ -1,0 +1,2 @@
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/Users/sean_conrad/Desktop/IdentityCard-scrt/target/wasm32-unknown-unknown/release/build/typenum-63e4b36f90b0d6f3/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=/Users/sean_conrad/Desktop/IdentityCard-scrt/target/wasm32-unknown-unknown/release/build/typenum-63e4b36f90b0d6f3/out/op.rs
