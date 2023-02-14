@@ -52,6 +52,23 @@ pub fn try_generate_viewing_key(
     Ok(res)
 }
 
+/* new_viewing_key is used to generate a unique, random key for each business card we create.The combination of the current time and the sender of the message is used as entropy to initialize the random number generator, so that each message has a unique viewing key that is derived from information specific to that message.
+
+ The function takes three arguments: env, info, and entropy_bytes. env is an instance of the Env struct that contains information about the environment in which the code is running. info is an instance of the MessageInfo struct that contains information about a message, and entropy_bytes is a slice of bytes representing entropy.
+
+1. The variable entropy_len is defined as the length of 16 + the length of the sender field in the "info" struct + the length of `entropy_bytes`.
+
+2. A Vec named rng_entropy is created with a capacity equal to entropy_len. The vector is then filled with entropy_bytes and the time (in nanoseconds) of the block stored in env.
+
+3. A random number is created using Prng::new with the entropy "entropy_bytes" and the "rng_entropy" vector.
+
+4. The method rng.rand_bytes generates a random slice of bytes.
+
+5. Then, we calculate the SHA-256 hash of the random slice, and store it in the "key" variable.
+
+6. Finally, we return the base64 encoding of the key as a String.
+  */
+
 pub fn new_viewing_key(env: &Env, info: MessageInfo, entropy_bytes: &[u8]) -> String {
     let entropy_len = 16 + info.sender.as_bytes().len() + entropy_bytes.len();
     let mut rng_entropy = Vec::with_capacity(entropy_len);
