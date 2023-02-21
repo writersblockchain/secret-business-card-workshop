@@ -9,11 +9,10 @@ const contract_wasm = fs.readFileSync(
   "../contract/target/wasm32-unknown-unknown/release/secret_business_card_workshop.wasm"
 );
 
-let codeId = 19857;
+let codeId;
 
-let contractAddress = "secret1cr6qes7vfg4eceazqhdvxrjmudetfs6x5hzvuw";
-let contractCodeHash =
-  "5c2bd9ea7affc1af2c05e773ccc9ac0120b412c2829dcddf452a71ab11be5b24";
+let contractAddress = "";
+let contractCodeHash = "";
 
 const secretjs = new SecretNetworkClient({
   chainId: "pulsar-2",
@@ -74,64 +73,19 @@ let instantiate_contract = async () => {
   console.log(contractAddress);
 };
 
-instantiate_contract();
+// instantiate_contract();
 
 let createCard = async () => {
-  const card_creation_tx = await secretjs.tx.compute.executeContract(
-    {
-      sender: wallet.address,
-      contract_address: contractAddress,
-      msg: {
-        create: {
-          card: { name: "card 0", address: "0", phone: "123456789" },
-          index: 0,
-        },
-      },
-      code_hash: contractCodeHash,
-    },
-    { gasLimit: 100_000 }
-  );
-
-  console.log(card_creation_tx);
+  // your code to go here
 };
 // createCard();
 
 let createViewingKey = async () => {
-  let viewing_key_creation = await secretjs.tx.compute.executeContract(
-    {
-      sender: wallet.address,
-      contract_address: contractAddress,
-      msg: {
-        generate_viewing_key: {
-          index: 0,
-        },
-      },
-      code_hash: contractCodeHash,
-    },
-    { gasLimit: 100_000 }
-  );
-
-  console.log(
-    viewing_key_creation.arrayLog.find(
-      (log) => log.type === "wasm" && log.key === "viewing_key"
-    ).value
-  );
+  // your code to go here
 };
 // createViewingKey();
 
 let queryCard = async () => {
-  let business_card_query_tx = await secretjs.query.compute.queryContract({
-    contract_address: contractAddress,
-    query: {
-      get_card: {
-        wallet: wallet.address,
-        viewing_key: viewing_key,
-        index: 0,
-      },
-    },
-    code_hash: contractCodeHash,
-  });
-
-  console.log(business_card_query_tx);
+  // your code to go here
 };
 // queryCard();

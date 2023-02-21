@@ -8,9 +8,8 @@ export default function CreateCard({
   secretJs,
   myAddress,
 }) {
-  let contractAddress = "secret1cr6qes7vfg4eceazqhdvxrjmudetfs6x5hzvuw";
-  let contractCodeHash =
-    "5c2bd9ea7affc1af2c05e773ccc9ac0120b412c2829dcddf452a71ab11be5b24";
+  let contractAddress = "";
+  let contractCodeHash = "";
 
   let formSubmitted = (e) => {
     e.preventDefault();
@@ -30,46 +29,7 @@ export default function CreateCard({
   };
 
   let createCard = async (name, address, phone, index) => {
-    const card_creation_tx = new MsgExecuteContract(
-      {
-        sender: myAddress,
-        contract_address: contractAddress,
-        msg: {
-          create: {
-            card: { name: name, address: address, phone: phone },
-            index: parseInt(index),
-          },
-        },
-        code_hash: contractCodeHash,
-      },
-      { gasLimit: 100_000 }
-    );
-
-    let viewing_key_creation = new MsgExecuteContract(
-      {
-        sender: myAddress,
-        contract_address: contractAddress,
-        msg: {
-          generate_viewing_key: {
-            index: parseInt(index),
-          },
-        },
-        code_hash: contractCodeHash,
-      },
-      { gasLimit: 100_000 }
-    );
-
-    const txs = await secretJs.tx.broadcast(
-      [card_creation_tx, viewing_key_creation],
-      {
-        gasLimit: 300_000,
-      }
-    );
-    const viewing_key = txs.jsonLog[1].events
-      .filter((x) => x.type === "wasm")[0]
-      .attributes.filter((x) => x.key === "viewing_key")[0].value;
-    setViewingKey(viewing_key);
-    console.log(viewing_key);
+    // your code to go here
   };
   // createCard();
 

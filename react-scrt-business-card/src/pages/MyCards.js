@@ -2,9 +2,8 @@ import { React, useState } from "react";
 
 export default function MyCards({ secretJs }) {
   let [myCards, setMyCards] = useState([]);
-  let contractAddress = "secret1cr6qes7vfg4eceazqhdvxrjmudetfs6x5hzvuw";
-  let contractCodeHash =
-    "5c2bd9ea7affc1af2c05e773ccc9ac0120b412c2829dcddf452a71ab11be5b24";
+  let contractAddress = "";
+  let contractCodeHash = "";
 
   let formSubmitted = (e) => {
     e.preventDefault();
@@ -17,19 +16,7 @@ export default function MyCards({ secretJs }) {
   };
 
   let queryCard = async (walletAddress, viewingKey, cardNumber) => {
-    let business_card_query_tx = await secretJs.query.compute.queryContract({
-      contract_address: contractAddress,
-      query: {
-        get_card: {
-          wallet: walletAddress,
-          viewing_key: viewingKey,
-          index: parseInt(cardNumber),
-        },
-      },
-      code_hash: contractCodeHash,
-    });
-
-    setMyCards((prevState) => [...prevState, business_card_query_tx.card]);
+    // your code to go here
   };
 
   let renderCards = myCards.map((card, i) => (
