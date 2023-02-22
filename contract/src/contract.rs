@@ -26,7 +26,7 @@ pub fn execute(deps: DepsMut, env: Env, info: MessageInfo, msg: HandleMsg) -> St
     match msg {
         HandleMsg::Create { card, index } => try_create_card(deps, info, card, index),
         HandleMsg::Burn { index } => try_burn_card(deps, env, info, index),
-        HandleMsg::GenerateViewingKey { index } => try_generate_viewing_key(deps, env, info, index),
+        // your code to go here
     }
 }
 
@@ -93,7 +93,7 @@ pub fn try_burn_card(
     info: MessageInfo,
     index: u8,
 ) -> StdResult<Response> {
-   //your code to go here 
+    //your code to go here
 
     Ok(Response::default())
 }

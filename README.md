@@ -10,6 +10,6 @@ In order to follow along with this workshop, please configure your developer env
 
 3. Clone this repo as it is the repo you will be working with during the workshop.
 
-4. If you have never worked with Secret Network smart contracts and/or Secret.js before, you might find it helpful to complete [this Secret.Js tutorial]() prior to attending the workshop.
+4. If you have never worked with Secret Network smart contracts and/or Secret.js before, you might find it helpful to complete [this Secret.Js tutorial](https://docs.scrt.network/secret-network-documentation/development/getting-started/interacting-with-the-testnet) prior to attending the workshop.
 
 Should you have any questions or concerns, reach out to seanrad on discord @Seanrad#0145

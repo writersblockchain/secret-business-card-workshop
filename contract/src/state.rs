@@ -8,9 +8,7 @@ pub static CONFIG_KEY: &[u8] = b"config";
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq, JsonSchema)]
 
 pub struct Card {
-    pub name: String,
-    pub address: String,
-    pub phone: String,
+    // your code to go here
 }
 
 pub static USER_CARDS: Keymap<u8, Card> = Keymap::new(b"user cards");
