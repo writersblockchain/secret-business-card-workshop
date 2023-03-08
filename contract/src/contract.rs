@@ -71,7 +71,8 @@ pub fn new_viewing_key(env: &Env, info: MessageInfo, entropy_bytes: &[u8]) -> St
     //5. Then, we calculate the SHA-256 hash of the random slice, and store it in the "key" variable.
     let key = sha_256(&rand_slice);
     //6. Finally, we return the base64 encoding of the key as a String.
-    base64::encode(&key)
+    // base64::encode is being depreciated, todo: switch to engine method instead
+    base64::encode(key)
 }
 
 pub fn try_create_card(
