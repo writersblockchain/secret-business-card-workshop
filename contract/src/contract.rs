@@ -23,9 +23,10 @@ pub fn instantiate(
 
 #[entry_point]
 pub fn execute(deps: DepsMut, env: Env, info: MessageInfo, msg: HandleMsg) -> StdResult<Response> {
+    todo!();
     match msg {
-        HandleMsg::Create { card, index } => try_create_card(deps, info, card, index),
-        HandleMsg::Burn { index } => try_burn_card(deps, env, info, index),
+        // HandleMsg::Create { card, index } => try_create_card(deps, info, card, index),
+        // HandleMsg::Burn { index } => try_burn_card(deps, env, info, index),
         // your code to go here
     }
 }
@@ -121,7 +122,7 @@ fn query_card(deps: Deps, wallet: Addr, viewing_key: String, index: u8) -> StdRe
             .get(deps.storage, &index);
 
         match card_exists {
-            Some(card) => Ok(CardResponse { card: card }),
+            Some(card) => Ok(CardResponse { card }),
             None => Err(StdError::generic_err("Card doesn't exist")),
         }
     } else {
