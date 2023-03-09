@@ -1,8 +1,0 @@
-/Users/sean_conrad/Desktop/developer/scrt-business-card-workshop/contract/target/debug/deps/libcosmwasm_schema_derive-34b70054cd5b33ed.dylib: /Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/cosmwasm-schema-derive-1.1.4/src/lib.rs /Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/cosmwasm-schema-derive-1.1.4/src/cw_serde.rs /Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/cosmwasm-schema-derive-1.1.4/src/generate_api.rs /Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/cosmwasm-schema-derive-1.1.4/src/query_responses.rs
-
-/Users/sean_conrad/Desktop/developer/scrt-business-card-workshop/contract/target/debug/deps/cosmwasm_schema_derive-34b70054cd5b33ed.d: /Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/cosmwasm-schema-derive-1.1.4/src/lib.rs /Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/cosmwasm-schema-derive-1.1.4/src/cw_serde.rs /Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/cosmwasm-schema-derive-1.1.4/src/generate_api.rs /Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/cosmwasm-schema-derive-1.1.4/src/query_responses.rs
-
-/Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/cosmwasm-schema-derive-1.1.4/src/lib.rs:
-/Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/cosmwasm-schema-derive-1.1.4/src/cw_serde.rs:
-/Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/cosmwasm-schema-derive-1.1.4/src/generate_api.rs:
-/Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/cosmwasm-schema-derive-1.1.4/src/query_responses.rs:

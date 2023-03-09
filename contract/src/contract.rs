@@ -23,9 +23,10 @@ pub fn instantiate(
 
 #[entry_point]
 pub fn execute(deps: DepsMut, env: Env, info: MessageInfo, msg: HandleMsg) -> StdResult<Response> {
+    todo!();
     match msg {
-        HandleMsg::Create { card, index } => try_create_card(deps, info, card, index),
-        HandleMsg::Burn { index } => try_burn_card(deps, env, info, index),
+        // HandleMsg::Create { card, index } => try_create_card(deps, info, card, index),
+        // HandleMsg::Burn { index } => try_burn_card(deps, env, info, index),
         // your code to go here
     }
 }
@@ -70,7 +71,8 @@ pub fn new_viewing_key(env: &Env, info: MessageInfo, entropy_bytes: &[u8]) -> St
     //5. Then, we calculate the SHA-256 hash of the random slice, and store it in the "key" variable.
     let key = sha_256(&rand_slice);
     //6. Finally, we return the base64 encoding of the key as a String.
-    base64::encode(&key)
+    // base64::encode is being depreciated, todo: switch to engine method instead
+    base64::encode(key)
 }
 
 pub fn try_create_card(
@@ -121,7 +123,7 @@ fn query_card(deps: Deps, wallet: Addr, viewing_key: String, index: u8) -> StdRe
             .get(deps.storage, &index);
 
         match card_exists {
-            Some(card) => Ok(CardResponse { card: card }),
+            Some(card) => Ok(CardResponse { card }),
             None => Err(StdError::generic_err("Card doesn't exist")),
         }
     } else {
