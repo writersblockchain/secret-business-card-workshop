@@ -1,18 +1,10 @@
 import { SecretNetworkClient, Wallet } from "secretjs";
 import * as fs from "fs";
-import dotenv from "dotenv";
-dotenv.config();
 
-const wallet = new Wallet(process.env.MNEMONIC);
+//replace with your wallet seed
+const wallet = new Wallet("your wallet seed goes here");
 
-const contract_wasm = fs.readFileSync(
-  "../contract/target/wasm32-unknown-unknown/release/secret_business_card_workshop.wasm"
-);
-
-let codeId;
-
-let contractAddress = "";
-let contractCodeHash = "";
+const contract_wasm = fs.readFileSync("../contract.wasm");
 
 const secretjs = new SecretNetworkClient({
   chainId: "pulsar-2",
@@ -20,6 +12,8 @@ const secretjs = new SecretNetworkClient({
   wallet: wallet,
   walletAddress: wallet.address,
 });
+
+// console.log(secretjs);
 
 let upload_contract = async () => {
   let tx = await secretjs.tx.compute.storeCode(
@@ -58,7 +52,7 @@ let instantiate_contract = async () => {
       sender: wallet.address,
       code_hash: contractCodeHash,
       init_msg: initMsg,
-      label: "Secret Business Card Workshop" + Math.ceil(Math.random() * 10000),
+      label: "Secret Business Card Demo" + Math.ceil(Math.random() * 10000),
     },
     {
       gasLimit: 400_000,
@@ -76,16 +70,53 @@ let instantiate_contract = async () => {
 // instantiate_contract();
 
 let createCard = async () => {
-  // your code to go here
+  const card_creation_tx = await secretjs.tx.compute.executeContract(
+    {
+      sender: wallet.address,
+      contract_address: contractAddress,
+      msg: {
+        create: {
+          card: {
+            name: "CardMonkey",
+            address: "CodeMonkey Street",
+            phone: "123456789",
+          },
+          index: 0,
+        },
+      },
+      code_hash: contractCodeHash,
+    },
+    { gasLimit: 100_000 }
+  );
+
+  console.log(card_creation_tx);
 };
 // createCard();
 
 let createViewingKey = async () => {
-  // your code to go here
+  let viewing_key_creation = await secretjs.tx.compute.executeContract(
+    {
+      sender: wallet.address,
+      contract_address: contractAddress,
+      msg: {
+        generate_viewing_key: {
+          index: 0,
+        },
+      },
+      code_hash: contractCodeHash,
+    },
+    { gasLimit: 100_000 }
+  );
+
+  console.log(
+    viewing_key_creation.arrayLog.find(
+      (log) => log.type === "wasm" && log.key === "viewing_key"
+    ).value
+  );
 };
 // createViewingKey();
 
 let queryCard = async () => {
   // your code to go here
 };
-// queryCard();
+queryCard();

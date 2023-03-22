@@ -6,14 +6,22 @@ use serde::{Deserialize, Serialize};
 use crate::state::Card;
 
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq, JsonSchema)]
-pub struct InitMsg {
+pub struct InstantiateMsg {
     pub entropy: String,
 }
 
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq, JsonSchema)]
 #[serde(rename_all = "snake_case")]
-pub enum HandleMsg {
- // your code to go here
+pub enum ExecuteMsg {
+    Create { card: Card, index: u8 },
+    Burn { index: u8 },
+    GenerateViewingKey { index: u8 },
+}
+
+#[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq, JsonSchema)]
+#[serde(rename_all = "snake_case")]
+pub struct ViewingKeyResponse {
+    pub viewing_key: String,
 }
 
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]
@@ -30,10 +38,4 @@ pub enum QueryMsg {
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq, JsonSchema)]
 pub struct CardResponse {
     pub card: Card,
-}
-
-#[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq, JsonSchema)]
-#[serde(rename_all = "snake_case")]
-pub struct ViewingKeyResponse {
-    pub viewing_key: String,
 }
