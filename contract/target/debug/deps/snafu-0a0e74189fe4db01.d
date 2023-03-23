@@ -1,0 +1,12 @@
+/Users/sean_conrad/Desktop/developer/scrt-business-card-workshop/contract/target/debug/deps/snafu-0a0e74189fe4db01.rmeta: /Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/snafu-0.7.4/src/lib.rs /Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/snafu-0.7.4/src/backtrace_inert.rs /Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/snafu-0.7.4/src/once_bool.rs /Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/snafu-0.7.4/src/error_chain.rs /Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/snafu-0.7.4/src/report.rs /Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/snafu-0.7.4/src/Snafu.md /Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/snafu-0.7.4/src/report.md /Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/snafu-0.7.4/src/../README.md
+
+/Users/sean_conrad/Desktop/developer/scrt-business-card-workshop/contract/target/debug/deps/snafu-0a0e74189fe4db01.d: /Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/snafu-0.7.4/src/lib.rs /Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/snafu-0.7.4/src/backtrace_inert.rs /Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/snafu-0.7.4/src/once_bool.rs /Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/snafu-0.7.4/src/error_chain.rs /Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/snafu-0.7.4/src/report.rs /Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/snafu-0.7.4/src/Snafu.md /Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/snafu-0.7.4/src/report.md /Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/snafu-0.7.4/src/../README.md
+
+/Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/snafu-0.7.4/src/lib.rs:
+/Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/snafu-0.7.4/src/backtrace_inert.rs:
+/Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/snafu-0.7.4/src/once_bool.rs:
+/Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/snafu-0.7.4/src/error_chain.rs:
+/Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/snafu-0.7.4/src/report.rs:
+/Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/snafu-0.7.4/src/Snafu.md:
+/Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/snafu-0.7.4/src/report.md:
+/Users/sean_conrad/.cargo/registry/src/github.com-1ecc6299db9ec823/snafu-0.7.4/src/../README.md:
