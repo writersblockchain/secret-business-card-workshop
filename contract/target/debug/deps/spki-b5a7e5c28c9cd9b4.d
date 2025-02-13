@@ -1,0 +1,11 @@
+/Users/seanconrad/Desktop/secret-business-card-workshop/contract/target/debug/deps/libspki-b5a7e5c28c9cd9b4.rmeta: /Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.5.4/src/lib.rs /Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.5.4/src/algorithm.rs /Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.5.4/src/error.rs /Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.5.4/src/spki.rs /Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.5.4/src/traits.rs /Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.5.4/src/document.rs /Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.5.4/src/../README.md
+
+/Users/seanconrad/Desktop/secret-business-card-workshop/contract/target/debug/deps/spki-b5a7e5c28c9cd9b4.d: /Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.5.4/src/lib.rs /Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.5.4/src/algorithm.rs /Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.5.4/src/error.rs /Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.5.4/src/spki.rs /Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.5.4/src/traits.rs /Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.5.4/src/document.rs /Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.5.4/src/../README.md
+
+/Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.5.4/src/lib.rs:
+/Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.5.4/src/algorithm.rs:
+/Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.5.4/src/error.rs:
+/Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.5.4/src/spki.rs:
+/Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.5.4/src/traits.rs:
+/Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.5.4/src/document.rs:
+/Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.5.4/src/../README.md:
